@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.github.library.bubbleview.BubbleTextView
+        android:id="@+id/bubbleChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:padding="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:text=""
+        android:textColor="@android:color/white"
+        app:angle="8dp"
+        app:arrowCenter="true"
+        app:arrowHeight="14dp"
+        app:arrowLocation="right"
+        app:arrowPosition="14dp"
+        app:arrowWidth="8dp"
+        app:bubbleColor="#607D8B" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:text="time"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@id/bubbleChat"
+        android:layout_toLeftOf="@id/bubbleChat"
+        android:paddingRight="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
