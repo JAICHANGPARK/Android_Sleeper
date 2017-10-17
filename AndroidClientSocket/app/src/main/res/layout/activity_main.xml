@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="org.dreamwalker.androidclientsocket.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewReciev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hello World!"
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewReciev"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="server-ip" />
+
+    <EditText
+        android:id="@+id/messageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/portText"
+        android:layout_below="@+id/portText"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Send message" />
+
+    <EditText
+        android:id="@+id/portText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/addressText"
+        android:layout_below="@+id/addressText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="port" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonConnect"
+        android:layout_alignBottom="@+id/buttonConnect"
+        android:layout_alignEnd="@+id/messageText"
+        android:text="clear" />
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/messageText"
+        android:layout_below="@+id/messageText"
+        android:layout_marginTop="13dp"
+        android:text="Send" />
+    <Button
+        android:id="@+id/sttButton"
+        android:layout_below="@id/buttonConnect"
+        android:text="말하기"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/buttonConnect"
+        />
+
+    <TextView
+        android:text="text result sample"
+        android:id="@+id/txtSpeechInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sttButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="@android:color/black"
+        android:textSize="26dp"
+        android:textStyle="normal" />
+
+    <com.cenkgun.chatbar.ChatBarView
+        android:id="@+id/chatbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:cb_isTextCleanerEnabled="true"
+        app:cb_isSoftInputHidden="true"
+        app:cb_messageBoxHint="sample text"
+        app:cb_micClickWarningMessage="길게 눌러 음성입력"/>
+
+
+</RelativeLayout>
