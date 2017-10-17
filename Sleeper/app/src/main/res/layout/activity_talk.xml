@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<com.hendraanggrian.widget.RevealFrameLayout
+    android:id="@+id/revealLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.TalkActivity">
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#333639"
-    tools:context="com.dreamwalker.sleeper.TalkActivity">
+    tools:context="com.dreamwalker.sleeper.Views.TalkActivity"
+    android:id="@+id/layout">
     <!-- 
     <TextView
         android:text="input your Messge"
@@ -16,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true" />
      -->
-
+    <!--
     <org.lunainc.chatbar.ViewChatBar
         android:id="@+id/charBar"
         android:layout_width="match_parent"
@@ -26,6 +37,21 @@
         android:layout_alignParentRight="true">
 
     </org.lunainc.chatbar.ViewChatBar>
+
+    -->
+
+    <com.dreamwalker.sleeper.ChatBarView
+        android:id="@+id/charBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:cb_isTextCleanerEnabled="true"
+        app:cb_isSoftInputHidden="true"
+        app:cb_messageBoxHint="sample text"
+        app:cb_micClickWarningMessage="warning message"/>
+
 
     <ListView
         android:paddingTop="10dp"
@@ -39,7 +65,5 @@
 
     </ListView>
 
-
-
-
 </RelativeLayout>
+</com.hendraanggrian.widget.RevealFrameLayout>
