@@ -1,45 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<com.hendraanggrian.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/revealLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#333639"
-    tools:context="com.dreamwalker.sleeper.TalkActivity">
-    <!-- 
-    <TextView
-        android:text="input your Messge"
-        android:id="@+id/textView"
-        android:textColor="#ffffff"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
-     -->
+    tools:context=".Views.TalkActivity">
 
-    <org.lunainc.chatbar.ViewChatBar
-        android:id="@+id/charBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true">
-
-    </org.lunainc.chatbar.ViewChatBar>
-
-    <ListView
-        android:paddingTop="10dp"
-        android:id="@+id/listView"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:divider="@null"
-        android:dividerHeight="0dp"
-        android:layout_above="@id/charBar">
+        android:background="#333639"
+        tools:context="com.dreamwalker.sleeper.Views.TalkActivity">
+        <!--
+        <TextView
+            android:text="input your Messge"
+            android:id="@+id/textView"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+         -->
+        <!--
+        <org.lunainc.chatbar.ViewChatBar
+            android:id="@+id/charBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true">
 
-    </ListView>
+        </org.lunainc.chatbar.ViewChatBar>
+
+        -->
+
+        <com.dreamwalker.sleeper.ChatBarView
+            android:id="@+id/charBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:cb_isSoftInputHidden="true"
+            app:cb_isTextCleanerEnabled="true"
+            app:cb_messageBoxHint="sample text" />
 
 
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/charBar"
+            android:layout_alignParentTop="true"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:paddingTop="10dp">
 
+        </ListView>
 
-</RelativeLayout>
+    </RelativeLayout>
+</com.hendraanggrian.widget.RevealFrameLayout>
