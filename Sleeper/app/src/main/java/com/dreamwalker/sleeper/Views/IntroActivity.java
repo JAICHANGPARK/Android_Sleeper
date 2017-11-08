@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
+import com.dreamwalker.sleeper.Intro2Fragment;
 import com.dreamwalker.sleeper.IntroFragment;
 import com.dreamwalker.sleeper.R;
 import com.dreamwalker.sleeper.SampleSlide;
@@ -23,6 +24,7 @@ public class IntroActivity extends AppIntro {
         addSlide(SampleSlide.newInstance(R.layout.intro_slide_01));
         addSlide(SampleSlide.newInstance(R.layout.intro_slide_02));
         addSlide(IntroFragment.newInstance(R.layout.intro_slide_03));
+        addSlide(Intro2Fragment.newInstance(R.layout.intro_slide_05)); // 와이파이 셋팅
         addSlide(SampleSlide.newInstance(R.layout.intro_slide_04));
         setFadeAnimation();
 //        askForPermissions(new String[]{Manifest.permission.CAMERA},1);

@@ -74,12 +74,29 @@
             android:label="@string/title_activity_sleep_main"
             android:parentActivityName=".Views.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
-
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Views.MainActivity" />
+        </activity>
+
+        <activity android:name=".Views.AboutUsActivity" />
+
+        <activity
+            android:name=".DetailAboutUsActivity"
+            android:label="@string/title_activity_detail_about_us"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Views.OpenLicenseActivity" />
+
+        <activity android:name=".Views.AboutAppActivity"
+            android:parentActivityName=".Views.AboutUsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Views.AboutUsActivity" />
 
         </activity>
+        <activity android:name=".Views.WebActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

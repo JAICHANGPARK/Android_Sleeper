@@ -235,8 +235,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.nav_aboutUs:
-
-                Toast.makeText(this, "아직 구현되지 않았어요 ㅠㅠ", Toast.LENGTH_SHORT).show();
+                intent = new Intent(MainActivity.this, AboutUsActivity.class);
+                startActivity(intent);
+                //Toast.makeText(this, "아직 구현되지 않았어요 ㅠㅠ", Toast.LENGTH_SHORT).show();
 
                 break;
         }
