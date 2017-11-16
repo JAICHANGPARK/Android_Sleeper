@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dreamwalker.sleeper">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,21 +12,100 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".Views.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".TalkActivity"
-            android:parentActivityName=".MainActivity">
+            android:name=".Views.TalkActivity"
+            android:parentActivityName=".Views.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"></meta-data>
+                android:value=".Views.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Views.SettingActivity"
+            android:parentActivityName=".Views.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Views.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Views.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Views.StartActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Views.LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Views.RegistrationActivity"
+            android:parentActivityName=".Views.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Views.LoginActivity" />
+        </activity>
+        <activity android:name=".Views.OtherLoginActivity" />
+        <activity
+            android:name=".Views.IntroActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Views.SettingInitActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Views.EnvironmentActivity"
+            android:parentActivityName=".Views.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Views.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Views.SleepMainActivity"
+            android:label="@string/title_activity_sleep_main"
+            android:parentActivityName=".Views.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Views.MainActivity" />
+        </activity>
+        <activity android:name=".Views.AboutUsActivity" />
+        <activity
+            android:name=".DetailAboutUsActivity"
+            android:label="@string/title_activity_detail_about_us"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Views.OpenLicenseActivity" />
+        <activity
+            android:name=".Views.AboutAppActivity"
+            android:parentActivityName=".Views.AboutUsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Views.AboutUsActivity" />
+        </activity>
+        <activity
+            android:name=".Views.WebActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Views.DetailSleepActivity"
+            android:parentActivityName=".Views.SleepMainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Views.SleepMainActivity" />
+        </activity>
+        <activity android:name=".Views.DetailGraphActivity"
+            android:parentActivityName=".Views.DetailSleepActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Views.DetailSleepActivity" />
+
         </activity>
     </application>
 
