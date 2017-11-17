@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fbutton_color_silver"
+            android:padding="4dp"
+            android:text="치료 안하고 방치하면, 두뇌 발달·키 성장에 악영향 끼칠 수 있어"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="자녀가 신체 성장 및 두뇌 발달에 있어 악영향을 끼치는 요인이 될 수 있기 때문이다" />
+
+        <TextView
+            android:id="@+id/pubDateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="4dp"
+            android:text="Fri, 17 Nov 2017 14:50:00 +0900" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
