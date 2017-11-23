@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_summary"
+            android:title="Total Result" />
+        <item
+            android:id="@+id/nav_heartrate"
+            android:title="Heart Rate" />
+        <item
+            android:id="@+id/nav_spo2"
+            android:title="SPO2" />
+        <item
+            android:id="@+id/nav_snoring"
+            android:title="Snoring" />
+        <item
+            android:id="@+id/nav_environment"
+            android:title="Environment" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_Setting"
+                android:icon="@drawable/ic_build_black_24dp"
+                android:title="Setting" />
+            <item
+                android:id="@+id/nav_aboutUs"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="AboutUs" />
+        </menu>
+    </item>
+</menu>

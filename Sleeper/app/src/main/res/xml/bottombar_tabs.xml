@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_home_black_24dp"
+        title="Home" />
+    <tab
+        id="@+id/tab_sleep"
+        icon="@drawable/ic_bubble_chart_black_24dp"
+        title="Sleep" />
+    <tab
+        id="@+id/tab_environment"
+        icon="@drawable/ic_landscape_black_24dp"
+        title="Environment" />
+
+    <tab
+        id="@+id/tab_news"
+        icon="@drawable/ic_receipt_black_24dp"
+        title="News" />
+</tabs>
